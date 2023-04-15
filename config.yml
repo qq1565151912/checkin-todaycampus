@@ -116,6 +116,10 @@ users: #!!!!!别误删了这一行!!!!!
     lon: 101.005566 # 经度(特别提醒!!!手机GPS是WGS-84坐标系，普通地图是GCJ02坐标系，今日校园用的是BD09坐标系。不要耍小聪明去其他地方获取坐标)
     lat: 22.773629 # 纬度
     address: "中国云南省普洱市思茅区思茅镇洗马河旅游环线" # 地址信息
+    proxy:
+      type: panda
+      api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
+      maxRetry: 3
 
   # - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
     # 政工签到模板=======
