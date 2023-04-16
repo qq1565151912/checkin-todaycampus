@@ -56,8 +56,6 @@ users: #!!!!!别误删了这一行!!!!!
       type: panda
       api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
       maxRetry: 3
-
-users: #!!!!!别误删了这一行!!!!!
   
   - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
     # 查寝模板=======
@@ -79,8 +77,6 @@ users: #!!!!!别误删了这一行!!!!!
       type: panda
       api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
       maxRetry: 3
-
-users: #!!!!!别误删了这一行!!!!!
   
   - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
     # 查寝模板=======
