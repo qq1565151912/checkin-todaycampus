@@ -174,7 +174,7 @@ users: #!!!!!别误删了这一行!!!!!
       api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
       maxRetry: 3
       
-   - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
+  - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
     # 查寝模板=======
     # 通用必填项-------
     type: 2 # 任务类型[信息收集:0|签到:1|查寝:2|教师工作日志:3|政工签到:4]
