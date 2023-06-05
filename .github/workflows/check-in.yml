@@ -3,7 +3,7 @@ name: "Check-In"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "27 14 * * *"
+    - cron: "25 14 * * *"
 
 jobs:
   build:
