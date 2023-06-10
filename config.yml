@@ -14,6 +14,7 @@ captcha: # 图片验证码识别(不需要可以不填)
   captchaLen: 4 # 验证码长度
 sendMessage: # 推送函数的整体运行情况(不需要的项目不用填，可以删掉或者放着不管)
   pushplus_parameters: "a04f77e6a9c54e16a33179ef14652652" # pushplus(https://www.pushplus.plus)参数，填入令牌(token)即可推送。也可以填入"token=xxx&topic=xxx"形式自定义更多参数
+  pushplus_parameters: "cf6e2d5df8e6485a8b73cb8e69107357" # pushplus(https://www.pushplus.plus)参数，填入令牌(token)即可推送。也可以填入"token=xxx&topic=xxx"形式自定义更多参数
   
 # ======================================================================
 # 用户组配置(填写自己所需的类型，并删掉不需要的。可以配置多用户(复制粘贴多配置几个就好)。)
@@ -196,4 +197,24 @@ users: #!!!!!别误删了这一行!!!!!
       api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
       maxRetry: 5
   
-
+  - # !!!!!!!!!!配置多用户时不要遗漏这一行("- "代表数组里一项的开始)!!!!!!!!!!
+    # 查寝模板=======
+    # 通用必填项-------
+    type: 2 # 任务类型[信息收集:0|签到:1|查寝:2|教师工作日志:3|政工签到:4]
+    schoolName: 普洱学院 # 学校全称
+    username: "2206069127" # 学号或者工号--赵振宇
+    password: "qq1565151912" # 密码
+    # 一般需填项-------
+    remarkName: "李树龙"
+    signLevel: 0 # 签到等级[0:正常签到|1:请假后依然签到|2:请假或已经打卡后依然重复签到]
+    title: 0 # [str:签到任务的标题|0:取最后一个未签到的任务]
+    abnormalReason: "" # abnormalReason 反馈信息
+    photo: "sign-photo" # 签到照片(不需要可不填)
+    # 经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
+    lon: 101.005566 # 经度(特别提醒!!!手机GPS是WGS-84坐标系，普通地图是GCJ02坐标系，今日校园用的是BD09坐标系。不要耍小聪明去其他地方获取坐标)
+    lat: 22.773629 # 纬度
+    address: "中国云南省普洱市思茅区思茅镇洗马河旅游环线" # 地址信息
+    proxy:
+      type: panda
+      api: http://pandavip.xiongmaodaili.com/xiongmao-web/apiPlus/vgl?secret=b31a0754a574fbc49e108289fcc8e294&orderNo=VGL20230415192520LT4XRDfq&count=200&isTxt=0&proxyType=1&validTime=0&removal=0&cityIds=
+      maxRetry: 5
