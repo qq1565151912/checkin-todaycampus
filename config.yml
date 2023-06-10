@@ -13,7 +13,6 @@ captcha: # 图片验证码识别(不需要可以不填)
   tencentSecretKey: "" # 腾讯云OCR
   captchaLen: 4 # 验证码长度
 sendMessage: # 推送函数的整体运行情况(不需要的项目不用填，可以删掉或者放着不管)
-  pushplus_parameters: "a04f77e6a9c54e16a33179ef14652652" # pushplus(https://www.pushplus.plus)参数，填入令牌(token)即可推送。也可以填入"token=xxx&topic=xxx"形式自定义更多参数
   pushplus_parameters: "cf6e2d5df8e6485a8b73cb8e69107357" # pushplus(https://www.pushplus.plus)参数，填入令牌(token)即可推送。也可以填入"token=xxx&topic=xxx"形式自定义更多参数
   
 # ======================================================================
